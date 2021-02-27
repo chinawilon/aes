@@ -1,7 +1,4 @@
 language: php
 php:
-  - 7.0
   - nightly
-before_install: true
-before_script: composer require chinawilon/aes
-script: ./vendor/bin/phpunit
+script: vendor/bin/phpunit
