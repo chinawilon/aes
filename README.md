@@ -1,6 +1,11 @@
-[![Build Status](https://travis-ci.org/chinawilon/aes.svg?branch=main)](https://travis-ci.org/chinawilon/aes)
 
 # AES
+
+[![travis][ico-travis]][link-travis]
+[![Latest Version on Packagist][ico-version]][link-packagist]
+[![Total Downloads][ico-downloads]][link-downloads]
+[![Code Coverage][ico-code-coverage]][link-code-coverage]
+[![Software License][ico-license]](LICENSE)
 
 example:
 ```php
