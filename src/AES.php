@@ -8,21 +8,21 @@ class AES
 {
     /**
      * key
-     * @var false|string
+     * @var string
      */
-    private string $key ;
+    private $key;
 
     /**
      * method
      * @var string
      */
-    private string $cipher;
+    private $cipher;
 
     /**
      * iv length
      * @var int
      */
-    private int $ivlen;
+    private $ivlen;
 
 
     /**
@@ -48,7 +48,7 @@ class AES
      */
     public function decrypt($cipherText, callable $callback = null)
     {
-        if (! is_null($this->callback)) {
+        if (! is_null($callback)) {
             $cipherText = call_user_func($callback, $cipherText);
         } else {
             // method base64_encode as default return
