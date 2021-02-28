@@ -1,11 +1,10 @@
 
 # AES
 
-[![travis][ico-travis]][link-travis]
-[![Latest Version on Packagist][ico-version]][link-packagist]
-[![Total Downloads][ico-downloads]][link-downloads]
-[![Code Coverage][ico-code-coverage]][link-code-coverage]
-[![Software License][ico-license]](LICENSE)
+[![Build Status](https://travis-ci.org/chinawilon/aes.svg?branch=main)](https://travis-ci.org/chinawilon/aes)
+[![codecov](https://codecov.io/gh/chinawilon/aes/branch/main/graph/badge.svg?token=DL98WPG4SM)](https://codecov.io/gh/chinawilon/aes)
+![Supported PHP versions: =7.1+](https://img.shields.io/badge/php-7.1+-blue.svg)
+
 
 example:
 ```php
