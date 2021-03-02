@@ -2,8 +2,6 @@
 
 namespace AES;
 
-use Exception;
-
 class AES
 {
     /**
@@ -74,6 +72,7 @@ class AES
         if (! $result) {
             throw new AESException('random bytes error');
         }
+        $tag = null;
         $data = openssl_encrypt($plainText, $this->cipher, $this->key, OPENSSL_RAW_DATA, $iv, $tag);
         $data = $iv . $data . $tag;
 
