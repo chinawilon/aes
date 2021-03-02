@@ -70,12 +70,10 @@ class AES
      */
     public function encrypt($plainText, callable $callback = null)
     {
-        try{
-            $iv = random_bytes($this->ivlen);
-        } catch (Exception $e) {
-            throw new AESException($e->getMessage());
+        $iv = openssl_random_pseudo_bytes($this->ivlen, $result);
+        if (! $result) {
+            throw new AESException('random bytes error');
         }
-
         $data = openssl_encrypt($plainText, $this->cipher, $this->key, OPENSSL_RAW_DATA, $iv, $tag);
         $data = $iv . $data . $tag;
 
